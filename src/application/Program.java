@@ -14,7 +14,7 @@ public class Program {
 
 		SellerDao sellerDao = DaoFactory.createSellerDao();
 
-		System.out.println("=== TEST 1: Seller findById ====");
+		/*System.out.println("=== TEST 1: Seller findById ====");
 		Seller seller = sellerDao.findById(3);
 		System.out.println(seller);
 
@@ -40,7 +40,11 @@ public class Program {
 		seller = sellerDao.findById(1);
 		seller.setEmail("Gabriela@gmail.com");
 		sellerDao.update(seller);
-		System.out.println("Update Completed.");
+		System.out.println("Update Completed.");*/
+		
+		System.out.println("\n === TEST 6: Seller Delete ====");
+		sellerDao.deleteById(10);
+		System.out.println("Delete completed.");
 	}
 	
 	
